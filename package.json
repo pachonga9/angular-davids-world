@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy-build": "ng build --prod --base-href https://pachonga9.github.io/angular-davids-world/"
   },
   "private": true,
   "dependencies": {
