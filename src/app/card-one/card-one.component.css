@@ -1,3 +1,10 @@
-mat-card {
+/* mat-card {
   font-family: "Urbanist", sans-serif;
+} */
+/* mat-card {
+  font-family: "Play", sans-serif;
+} */
+mat-card {
+  /* font-family: "Castoro", serif; */
+  font-family: "Sorts Mill Goudy", serif;
 }

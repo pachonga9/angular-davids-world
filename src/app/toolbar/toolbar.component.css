@@ -1,20 +1,13 @@
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: black;
+  /* background-color: black; */
+  opacity: 1;
   margin: 0 auto;
   text-align: center;
   height: auto;
   z-index: 2;
 }
-
-/* .navbar a {
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-} */
 
 .dropdown .dropdownButton {
   display: flex;
@@ -27,12 +20,12 @@
   font-family: inherit;
   margin: 0 auto;
   align-items: stretch;
+  transition: 1s ease-in;
 }
 
-.dropdown:hover .dropdownButton {
+.dropdown .dropdownButton:hover {
   background-color: #ffffff;
   color: #000000;
-  transition: 3.3s;
 }
 
 .dropdown-content {
@@ -40,29 +33,32 @@
   justify-content: space-between;
   gap: 15px;
   visibility: hidden;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 12px 0px rgba(200, 236, 243, 0.193);
+  /* box-shadow: 0px 8px 16px 0px rgba(227, 26, 157, 0.446); */
   overflow: visible;
   height: 0;
   border: 1px solid rgb(101, 101, 176);
-  transition: all 1s ease-in;
+  padding: 5px;
+  transition: 1s ease-in;
   opacity: 0;
-}
-
-.dropdown-content a {
-  border: 1px solid rgb(196, 199, 227);
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  margin: 15px;
 }
 
 .dropdown:hover .dropdown-content {
   height: 70px;
-  transition: 3.3s;
-  transition: all 1s ease-in;
+  transition: 1s ease-in;
   visibility: visible;
   opacity: 1;
+}
+.dropdown-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(196, 199, 227);
+  font-size: 16px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
 }

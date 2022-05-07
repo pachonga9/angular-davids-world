@@ -1,28 +1,21 @@
 <ng-container>
-  <!-- <app-toolbar></app-toolbar> -->
   <!-- TODO: make the sidenav mobile responsive -->
-  <mat-sidenav-container class="bg-blue-900 h-full">
-    <!-- <app-toolbar></app-toolbar> -->
+  <mat-sidenav-container class="bg-blue-900 h-auto">
     <mat-sidenav
       #sidenav
       mode="side"
       [(opened)]="opened"
-      class="p-4 bg-blue-300 w-52"
+      class="p-4 bg-blue-300 w-52 h-auto"
     >
       <app-sidenav-content></app-sidenav-content>
     </mat-sidenav>
-    <div class="flex h-full">
+    <div class="flex h-auto">
       <button (click)="opened = !opened" class="bg-gray-600">
-        <mat-icon class="text-white">menu</mat-icon>
+        <mat-icon class="text-white">drag_indicator</mat-icon>
       </button>
-      <div class="flex-1">
-        <app-toolbar></app-toolbar>
-
+      <div class="flex-auto">
         <router-outlet></router-outlet>
       </div>
     </div>
   </mat-sidenav-container>
 </ng-container>
-<!-- <div class="text-center mb-auto bg-indigo-200 text-xs">
-  <p>Copyright &copy; 2022 James David Wyers</p>
-</div> -->
